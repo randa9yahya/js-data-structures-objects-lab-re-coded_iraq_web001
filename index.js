@@ -19,11 +19,11 @@ function deleteFromDriverByKey(driver,key){
    return deleteDrive;
 }
 function destructivelyDeleteFromDriverByKey(driver,key){
-  const newDriver = { ...driver };
-  delete newDriver[key];
-  return newDriver;
+
+  delete driver[key];
+  return driver;
 }
-console.log()
+
 
 updateDriverWithKeyAndValue(driver,"name",'Sam')
  
